@@ -11,7 +11,7 @@ pipeline {
             steps {
                 sh 'echo "Testing..."'
                 sh 'pwd'
-                sh 'touch testfile.txt'
+                sh 'touch testfile2.txt'
                 sh 'ls -l'
             }
         }
@@ -19,7 +19,7 @@ pipeline {
             steps {
                 sh 'cat ./deploy.sh'
                 sh 'echo "Deploying..."'
-                sh 'mv testfile.txt /tmp'
+                sh 'mv testfile2.txt /tmp'
                 sh 'ls -l /tmp'
             }
         }
